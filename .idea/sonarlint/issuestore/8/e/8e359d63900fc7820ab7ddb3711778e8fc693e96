@@ -1,0 +1,5 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¸á‘˜ùÿÿÿÿ8ù¶å¼0
+]	java:S125"<This block of commented-out lines of code should be removed.(„öÛùøÿÿÿÿ8ù¶å¼0
+S
+java:S1128"7Remove this unused import 'javafx.scene.control.Alert'.(ÊÇê:8ù¶å¼0

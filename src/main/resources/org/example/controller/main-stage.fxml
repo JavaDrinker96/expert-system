@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="338.0" minWidth="624.0" prefHeight="522.0" prefWidth="1009.0" spacing="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ViewController">
+   <children>
+      <TabPane prefHeight="578.0" prefWidth="1258.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab text="Studying">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="1156.0">
+                     <children>
+                        <TextField fx:id="optionsNameFiled" layoutX="502.0" layoutY="213.0" prefHeight="25.0" prefWidth="270.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="addOptionButton" layoutX="801.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#addOption" text="Add" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="deleteOptionButton" layoutX="852.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#deleteOption" text="Delete" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="objectList" layoutX="14.0" layoutY="260.0" prefHeight="200.0" prefWidth="269.0" />
+                        <ListView fx:id="optionList" layoutX="503.0" layoutY="260.0" prefHeight="200.0" prefWidth="269.0" />
+                        <TextField fx:id="folderPathField" layoutX="14.0" layoutY="50.0" prefHeight="39.0" prefWidth="824.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="objectsNameField" layoutX="14.0" layoutY="213.0" prefHeight="25.0" prefWidth="270.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="addObjectButton" layoutX="311.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#addObject" text="add" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="deleteObjectButton" layoutX="362.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#deleteObject" text="Delete" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="14.0" layoutY="177.0" text="Objects">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="502.0" layoutY="177.0" text="Options">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="14.0" text="Folder for file:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="chooseFolderButton" layoutX="863.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#chooseFolder" text="Choose folder" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="studyingButton" layoutX="840.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#studying" prefHeight="44.0" prefWidth="144.0" text="Start studying" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="25.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="fileNameField" layoutX="135.0" layoutY="103.0" prefHeight="39.0" prefWidth="308.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="14.0" layoutY="105.0" text="FIle name:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Expert">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="knowledgeBasePath" layoutX="128.0" layoutY="214.0" prefHeight="25.0" prefWidth="621.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="128.0" layoutY="165.0" prefHeight="35.0" prefWidth="276.0" text="Path to knowledge base:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="chooseKnowledgeBase" layoutX="775.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#chooseKnowledgeBase" prefHeight="25.0" prefWidth="107.0" text="Choose file">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="runExpertSystemButton" layoutX="775.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#runExpertSystem" prefHeight="25.0" prefWidth="107.0" text="Run ES" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="25.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
